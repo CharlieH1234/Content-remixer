@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 function App() {
-  const [inputText, setInputText] = useState('')
-  const [outputText, setOutputText] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
+  const [inputText, setInputText] = useState<string>('')
+  const [outputText, setOutputText] = useState<string>('')
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const handleRemix = async () => {
     setIsLoading(true)
